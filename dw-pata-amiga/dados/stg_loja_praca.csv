@@ -1,0 +1,49 @@
+CodLoja;NomeLoja;CodPraca;NomePraca;Regional;DomiciliosComPet;PercentualPublico
+LJ-001;Pata Amiga Blumenau Centro;PRC01;Vale do Itajai;Regional Leste;148.000;1.00
+LJ-002;Pata Amiga Rio do Sul;PRC01;Vale do Itajai;Regional Leste;148.000;1.00
+LJ-003;Pata Amiga Itajai Praia;PRC01;Vale do Itajai;Regional Leste;148.000;0.85
+LJ-003;Pata Amiga Itajai Praia;PRC04;Foz do Itajai;Regional Leste;74.000;0.15
+LJ-004;Pata Amiga Brusque;PRC01;Vale do Itajai;Regional Leste;148.000;0.70
+LJ-004;Pata Amiga Brusque;PRC04;Foz do Itajai;Regional Leste;74.000;0.30
+LJ-005;Pata Amiga Timbo;PRC01;Vale do Itajai;Regional Leste;148.000;1.00
+LJ-006;Pata Amiga Indaial;PRC01;Vale do Itajai;Regional Leste;148.000;1.00
+LJ-007;Pata Amiga Gaspar;PRC01;Vale do Itajai;Regional Leste;148.000;0.90
+LJ-007;Pata Amiga Gaspar;PRC04;Foz do Itajai;Regional Leste;74.000;0.10
+LJ-008;Pata Amiga Presidente Getulio;PRC01;Vale do Itajai;Regional Leste;148.000;1.00
+LJ-009;Pata Amiga Taio;PRC01;Vale do Itajai;Regional Leste;148.000;0.80
+LJ-009;Pata Amiga Taio;PRC08;Serra Catarinense;Regional Oeste;44.000;0.20
+LJ-010;Pata Amiga Ituporanga;PRC01;Vale do Itajai;Regional Leste;148.000;0.75
+LJ-010;Pata Amiga Ituporanga;PRC08;Serra Catarinense;Regional Oeste;44.000;0.25
+LJ-011;Pata Amiga Ibirama;PRC01;Vale do Itajai;Regional Leste;148.000;1.00
+LJ-012;Pata Amiga Rio dos Cedros;PRC01;Vale do Itajai;Regional Leste;148.000;0.65
+LJ-012;Pata Amiga Rio dos Cedros;PRC02;Norte Industrial;Regional Norte;96.000;0.35
+LJ-013;Pata Amiga Joinville Sul;PRC03;Litoral Norte;Regional Norte;61.000;0.60
+LJ-013;Pata Amiga Joinville Sul;PRC02;Norte Industrial;Regional Norte;96.000;0.40
+LJ-014;Pata Amiga Jaragua do Sul;PRC02;Norte Industrial;Regional Norte;96.000;1.00
+LJ-015;Pata Amiga Sao Bento do Sul;PRC12;Planalto Norte;Regional Norte;33.000;0.70
+LJ-015;Pata Amiga Sao Bento do Sul;PRC03;Litoral Norte;Regional Norte;61.000;0.30
+LJ-016;Pata Amiga Itapoa;PRC03;Litoral Norte;Regional Norte;61.000;1.00
+LJ-017;Pata Amiga Florianopolis Norte;PRC05;Grande Florianopolis;Regional Leste;132.000;1.00
+LJ-018;Pata Amiga Sao Jose Kobrasol;PRC05;Grande Florianopolis;Regional Leste;132.000;0.80
+LJ-018;Pata Amiga Sao Jose Kobrasol;PRC04;Foz do Itajai;Regional Leste;74.000;0.20
+LJ-019;Pata Amiga Palhoca;PRC05;Grande Florianopolis;Regional Leste;132.000;1.00
+LJ-020;Pata Amiga Santo Amaro da Imperatriz;PRC05;Grande Florianopolis;Regional Leste;132.000;1.00
+LJ-021;Pata Amiga Criciuma;PRC07;Carbonifera;Regional Sul;67.000;0.55
+LJ-021;Pata Amiga Criciuma;PRC06;Litoral Sul;Regional Sul;58.000;0.45
+LJ-022;Pata Amiga Tubarao;PRC06;Litoral Sul;Regional Sul;58.000;1.00
+LJ-023;Pata Amiga Ararangua;PRC07;Carbonifera;Regional Sul;67.000;1.00
+LJ-024;Pata Amiga Laguna;PRC06;Litoral Sul;Regional Sul;58.000;0.85
+LJ-024;Pata Amiga Laguna;PRC07;Carbonifera;Regional Sul;67.000;0.15
+LJ-025;Pata Amiga Lages;PRC08;Serra Catarinense;Regional Oeste;44.000;0.60
+LJ-025;Pata Amiga Lages;PRC09;Planalto Serrano;Regional Oeste;29.000;0.40
+LJ-026;Pata Amiga Sao Joaquim;PRC09;Planalto Serrano;Regional Oeste;29.000;0.70
+LJ-026;Pata Amiga Sao Joaquim;PRC08;Serra Catarinense;Regional Oeste;44.000;0.30
+LJ-027;Pata Amiga Otacilio Costa;PRC08;Serra Catarinense;Regional Oeste;44.000;1.00
+LJ-028;Pata Amiga Curitibanos;PRC08;Serra Catarinense;Regional Oeste;44.000;0.75
+LJ-028;Pata Amiga Curitibanos;PRC11;Extremo Oeste;Regional Oeste;63.000;0.25
+LJ-029;Pata Amiga Chapeco;PRC10;Meio-Oeste;Regional Oeste;51.000;0.60
+LJ-029;Pata Amiga Chapeco;PRC11;Extremo Oeste;Regional Oeste;63.000;0.40
+LJ-030;Pata Amiga Concordia;PRC11;Extremo Oeste;Regional Oeste;63.000;1.00
+LJ-031;Pata Amiga Xanxere;PRC10;Meio-Oeste;Regional Oeste;51.000;0.70
+LJ-031;Pata Amiga Xanxere;PRC11;Extremo Oeste;Regional Oeste;63.000;0.30
+LJ-032;Pata Amiga Sao Miguel do Oeste;PRC11;Extremo Oeste;Regional Oeste;63.000;1.00
