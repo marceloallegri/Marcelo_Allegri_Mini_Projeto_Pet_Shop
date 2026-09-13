@@ -1,0 +1,33 @@
+CodLoja;NomeLoja;Cidade;UF;Mesorregiao;PopulacaoCidade;AreaVenda_m2;FaixaFranquia;FormatoLoja;CodCDReferencia;DtUltimaAtualizacao
+LJ-001;Pata Amiga Blumenau Centro;Blumenau;SC;Vale do Itajaí;361.855;620;Diamante;Megastore;CD-001;31/03/2024
+LJ-002;Pata Amiga Rio do Sul;Rio do Sul;SC;Vale do Itajaí;73.135;310;Diamante;Completa;CD-002;31/03/2024
+LJ-003;Pata Amiga Itajai Praia;Itajaí;SC;Vale do Itajaí;264.054;480;Ouro;Padrao;CD-003;31/03/2024
+LJ-004;Pata Amiga Brusque;Brusque;SC;Vale do Itajaí;143.270;340;Ouro;Padrao;CD-003;31/03/2024
+LJ-005;Pata Amiga Timbo;Timbó;SC;Vale do Itajaí;45.011;165;Ouro;Padrao;CD-004;31/03/2024
+LJ-006;Pata Amiga Indaial;Indaial;SC;Vale do Itajaí;71.987;230;Ouro;Padrao;CD-004;31/03/2024
+LJ-007;Pata Amiga Gaspar;Gaspar;SC;Vale do Itajaí;71.133;245;Diamante;Megastore;CD-001;31/03/2024
+LJ-008;Pata Amiga Presidente Getulio;Presidente Getúlio;SC;Vale do Itajaí;16.359;120;Diamante;Completa;CD-005;31/03/2024
+LJ-009;Pata Amiga Taio;Taió;SC;Vale do Itajaí;18.173;110;Ouro;Completa;CD-006;31/03/2024
+LJ-010;Pata Amiga Ituporanga;Ituporanga;SC;Vale do Itajaí;25.748;135;Prata;Padrao;CD-006;31/03/2024
+LJ-011;Pata Amiga Ibirama;Ibirama;SC;Vale do Itajaí;18.613;115;Ouro;Completa;CD-005;31/03/2024
+LJ-012;Pata Amiga Rio dos Cedros;Rio dos Cedros;SC;Vale do Itajaí;11.322;95;Ouro;Padrao;CD-004;31/03/2024
+LJ-013;Pata Amiga Joinville Sul;Joinville;SC;Norte Catarinense;597.658;760;Ouro;Padrao;CD-007;31/03/2024
+LJ-014;Pata Amiga Jaragua do Sul;Jaraguá do Sul;SC;Norte Catarinense;184.579;430;Ouro;Padrao;CD-008;31/03/2024
+LJ-015;Pata Amiga Sao Bento do Sul;São Bento do Sul;SC;Norte Catarinense;87.310;260;Prata;Padrao;CD-007;31/03/2024
+LJ-016;Pata Amiga Itapoa;Itapoá;SC;Norte Catarinense;20.586;105;Prata;Padrao;CD-007;31/03/2024
+LJ-017;Pata Amiga Florianopolis Norte;Florianópolis;SC;Grande Florianópolis;537.213;690;Ouro;Padrao;CD-009;31/03/2024
+LJ-018;Pata Amiga Sao Jose Kobrasol;São José;SC;Grande Florianópolis;250.181;520;Ouro;Padrao;CD-010;31/03/2024
+LJ-019;Pata Amiga Palhoca;Palhoça;SC;Grande Florianópolis;168.259;400;Ouro;Padrao;CD-010;31/03/2024
+LJ-020;Pata Amiga Santo Amaro da Imperatriz;Santo Amaro da Imperatriz;SC;Grande Florianópolis;22.357;130;Diamante;Padrao;CD-011;31/03/2024
+LJ-021;Pata Amiga Criciuma;Criciúma;SC;Sul Catarinense;217.392;450;Ouro;Megastore;CD-012;31/03/2024
+LJ-022;Pata Amiga Tubarao;Tubarão;SC;Sul Catarinense;105.511;300;Ouro;Completa;CD-013;31/03/2024
+LJ-023;Pata Amiga Ararangua;Araranguá;SC;Sul Catarinense;68.274;210;Ouro;Completa;CD-014;31/03/2024
+LJ-024;Pata Amiga Laguna;Laguna;SC;Sul Catarinense;46.122;175;Prata;Padrao;CD-013;31/03/2024
+LJ-025;Pata Amiga Lages;Lages;SC;Serrana;158.846;390;Prata;Padrao;CD-015;31/03/2024
+LJ-026;Pata Amiga Sao Joaquim;São Joaquim;SC;Serrana;27.234;125;Bronze;Padrao;CD-015;31/03/2024
+LJ-027;Pata Amiga Otacilio Costa;Otacílio Costa;SC;Serrana;18.227;100;Prata;Padrao;CD-015;31/03/2024
+LJ-028;Pata Amiga Curitibanos;Curitibanos;SC;Serrana;39.061;160;Bronze;Padrao;CD-015;31/03/2024
+LJ-029;Pata Amiga Chapeco;Chapecó;SC;Oeste Catarinense;254.235;470;Prata;Padrao;CD-016;31/03/2024
+LJ-030;Pata Amiga Concordia;Concórdia;SC;Oeste Catarinense;74.641;220;Prata;Padrao;CD-016;31/03/2024
+LJ-031;Pata Amiga Xanxere;Xanxerê;SC;Oeste Catarinense;52.034;180;Bronze;Padrao;CD-016;31/03/2024
+LJ-032;Pata Amiga Sao Miguel do Oeste;São Miguel do Oeste;SC;Oeste Catarinense;41.520;170;Bronze;Padrao;CD-016;31/03/2024
