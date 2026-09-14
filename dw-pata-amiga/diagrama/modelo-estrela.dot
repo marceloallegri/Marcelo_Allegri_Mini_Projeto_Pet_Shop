@@ -1,0 +1,89 @@
+// Modelo dimensional da Pata Amiga - esquema estrela
+// Gerar a imagem: dot -Tpng modelo-estrela.dot -o modelo-estrela.png
+// Tambem abre no draw.io: Arrange > Insert > Advanced > Graphviz
+
+digraph modelo_estrela {
+    rankdir=LR;
+    bgcolor="white";
+    nodesep=0.55;
+    ranksep=1.20;
+    node [shape=plaintext, fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10, color="black", penwidth=1.0, arrowsize=0.8];
+
+    fato [label=<
+      <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="white">
+        <TR><TD BGCOLOR="#d9d9d9"><B>fato_pedido</B></TD></TR>
+        <TR><TD><I>grao: 1 linha = 1 pedido (4.044 linhas)</I></TD></TR>
+        <TR><TD ALIGN="LEFT">PK  sk_pedido</TD></TR>
+        <TR><TD ALIGN="LEFT">numero_pedido (dimensao degenerada)</TD></TR>
+        <TR><TD ALIGN="LEFT">FK  sk_tempo_pedido</TD></TR>
+        <TR><TD ALIGN="LEFT">FK  sk_tempo_entrega</TD></TR>
+        <TR><TD ALIGN="LEFT">FK  sk_loja</TD></TR>
+        <TR><TD ALIGN="LEFT">FK  sk_categoria</TD></TR>
+        <TR><TD ALIGN="LEFT">houve_desconto, canal_pedido</TD></TR>
+        <TR><TD ALIGN="LEFT">qt_itens, vl_liquido (aditivas)</TD></TR>
+        <TR><TD ALIGN="LEFT">dias_integracao_separacao</TD></TR>
+        <TR><TD ALIGN="LEFT">dias_separacao_nota</TD></TR>
+        <TR><TD ALIGN="LEFT">dias_nota_despacho</TD></TR>
+        <TR><TD ALIGN="LEFT">dias_despacho_entrega</TD></TR>
+        <TR><TD ALIGN="LEFT">dias_total_ate_entrega</TD></TR>
+      </TABLE>>];
+
+    tempo [label=<
+      <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="white">
+        <TR><TD BGCOLOR="#f0f0f0"><B>dim_tempo</B></TD></TR>
+        <TR><TD><I>236 linhas</I></TD></TR>
+        <TR><TD ALIGN="LEFT">PK  sk_tempo (AAAAMMDD)</TD></TR>
+        <TR><TD ALIGN="LEFT">data, ano_mes, dia_semana</TD></TR>
+      </TABLE>>];
+
+    loja [label=<
+      <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="white">
+        <TR><TD BGCOLOR="#f0f0f0"><B>dim_loja</B></TD></TR>
+        <TR><TD><I>33 linhas (32 + a -1)</I></TD></TR>
+        <TR><TD ALIGN="LEFT">PK  sk_loja</TD></TR>
+        <TR><TD ALIGN="LEFT">cod_loja (chave natural)</TD></TR>
+        <TR><TD ALIGN="LEFT">chave_loja, cidade, porte</TD></TR>
+        <TR><TD ALIGN="LEFT">populacao_cidade, faixa_franquia</TD></TR>
+      </TABLE>>];
+
+    categoria [label=<
+      <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="white">
+        <TR><TD BGCOLOR="#f0f0f0"><B>dim_categoria</B></TD></TR>
+        <TR><TD><I>19 linhas (18 grafias + a -1)</I></TD></TR>
+        <TR><TD ALIGN="LEFT">PK  sk_categoria</TD></TR>
+        <TR><TD ALIGN="LEFT">categoria_origem (grafia crua)</TD></TR>
+        <TR><TD ALIGN="LEFT">nome_categoria, grupo_categoria</TD></TR>
+      </TABLE>>];
+
+    bridge [label=<
+      <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="white">
+        <TR><TD BGCOLOR="#f0f0f0"><B>bridge_loja_praca</B></TD></TR>
+        <TR><TD><I>48 linhas (tabela ponte N:N)</I></TD></TR>
+        <TR><TD ALIGN="LEFT">PK  cod_loja + sk_praca</TD></TR>
+        <TR><TD ALIGN="LEFT">fator_publico (soma 1,00 por loja)</TD></TR>
+      </TABLE>>];
+
+    praca [label=<
+      <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" CELLPADDING="6" BGCOLOR="white">
+        <TR><TD BGCOLOR="#f0f0f0"><B>dim_praca</B></TD></TR>
+        <TR><TD><I>13 linhas (12 + a -1)</I></TD></TR>
+        <TR><TD ALIGN="LEFT">PK  sk_praca</TD></TR>
+        <TR><TD ALIGN="LEFT">cod_praca, nome_praca, regional</TD></TR>
+        <TR><TD ALIGN="LEFT">domicilios_com_pet</TD></TR>
+      </TABLE>>];
+
+    // a dim_tempo entra duas vezes: mesma tabela, dois papeis
+    tempo -> fato [label="  papel 1: data do pedido\l  sk_tempo = sk_tempo_pedido\l"];
+    tempo -> fato [label="  papel 2: data da entrega\l  sk_tempo = sk_tempo_entrega\l", style=dashed];
+
+    categoria -> fato [label="  sk_categoria  "];
+    loja      -> fato [label="  sk_loja  "];
+
+    // unico caminho indireto do modelo
+    praca  -> bridge [label="  sk_praca  ", dir=back];
+    bridge -> loja   [label="  cod_loja  ", dir=back];
+
+    { rank=same; tempo; categoria; }
+    { rank=same; praca; bridge; }
+}
